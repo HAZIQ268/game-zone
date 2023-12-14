@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Game Zone</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #1a0327;
+            font-family: 'Poppins', sans-serif;
+            height: 350vh;
+        }
+
+        .container {
+            margin: 50px auto;
+        }
+
+        img {
+            height: 400px;
+            width: 400px;
+        }
+
+        .container {
+            margin: 50px auto;
+        }
+
+        img {
+            height: 350px;
+            width: 440px;
+        }
+
+        .inner {
+            width: 1170px;
+            border: 2px solid rgb(235, 141, 17);
+            margin: auto;
+        }
+
+        .col {
+            float: left;
+            width: 23%;
+            margin: 1%;
+            background-color: rgb(54, 0, 54);
+            text-align: center;
+            color: rgb(255, 145, 0);
+            font-weight: 900;
+        }
+
+        .col img {
+            width: 100%;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        @media only screen and (min-width:200px) and (max-width:576px) {
+            .inner {
+                width: 100%;
+            }
+
+            .col {
+                width: 80%;
+                margin: 10%;
+            }
+        }
+
+        @media only screen and (min-width:576px) and (max-width:1060px) {
+            .inner {
+                width: 100%;
+            }
+
+            .col {
+                width: 80%;
+                margin: 10%;
+            }
+        }
+
+        #actiimg img {
+            height: 550px;
+            width: 100%;
+        }
+
+        #con {
+            font-size: 25px;
+        }
+
+        #game {
+            font-size: 35px;
+        }
+
+        #msbt {
+            height: 290px;
+            width: 75%;
+            border-radius: 22px;
+        }
+        #foot{
+            background-color: #3d035f64;
+        }
+        #nnav{
+            background-color:#18012764;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="nnav">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold mx-auto ms-5 text-warning " id="game" href="#">Game Zone</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav  ms-auto me-5  mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-warning" id="fon" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning" id="fon" href="#action">Action Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning" id="fon" href="#categories">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning" id="fon" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning" id="fon" href="./responsive.html">Responsive</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning" href="#contact">Contact Us</a>
+                    </li>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- slide  start-->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" id="actiimg">
+                <img src="./images/CODM-S5-GHOST-TOUT.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" id="actiimg">
+                <img src="./images/fortnite-1920.jpg" style="opacity: 0.8;" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" id="actiimg">
+                <img src="./images/fornitenew.png" style="opacity: 1;" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- action games -->
+    <h2 class="text-center text-warning display-5 fw-bold mx-auto mt-5" id="action">Action Games</h2>
+    <section class="swiper_container">
+        <div class="container">
+            <div class="swiper card_slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="img-box">
+                            <img src="./images/battle.jpg" alt="">
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="img-box">
+                            <img src="./images/fortnit.jpg" alt="">
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="img-box">
+                            <img src="./images/nba.jpg" alt="">
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="img-box">
+                            <img src="./images/game2.jpg" alt="">
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="img-box">
+                            <img src="./images/wras.jpg" alt="">
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img-box">
+                            <img src="./images/nba.jpg" alt="">
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img-box">
+                            <img src="./images/warxone.jpg" alt="">
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="img-box">
+                            <img src="./images/game.jpg" alt="">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".card_slider", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <br>
+    <h2 class="text-center text-warning display-5 fw-bold mx-auto mt-4 mb-5" id="categories">Game Categories</h2>
+    <br>
+    <div class="inner">
+        <div class="col">
+            <img src="./images/battle.jpg" height="380px" width="100%" alt="">
+        </div>
+        <div class="col">
+            <img src="./images/game2.jpg" height="380px" width="100%" alt="">
+        </div>
+        <div class="col">
+            <img src="./images/game.jpg" height="380px" width="100%" alt="">
+        </div>
+        <div class="col">
+            <img src="./images/download.jpg" height="380px" width="100%" alt="">
+        </div>
+        <div class="col">
+            <img src="./images/carrace.jpg" height="380px" width="100%" alt="">
+        </div>
+        <div class="col">
+            <img src="./images/craft.jpeg" height="380px" width="100%" alt="">
+        </div>
+        <div class="col">
+            <img src="./images/asphalt8.jpg" height="380px" width="100%" alt="">
+        </div>
+        <div class="col">
+            <img src="./images/game3.jpg" height="380px" width="100%" alt="">
+        </div>
+        <div class="col">
+            <img src="./images/Anpar.jpg" height="380px" width="100%" alt="">
+        </div>
+        <div class="col">
+            <img src="./images/fortnit.jpg" height="380px" width="100%" alt="">
+        </div>
+        <div class="col">
+            <img src="./images/pes22.webp" height="380px" width="100%" alt="">
+        </div>
+        <div class="col">
+            <img src="./images/warxone.jpg" height="380px" width="100%" alt="">
+        </div>
+        <div class="clear"></div>
+    </div>
+    <br>
+    <br>
+    <h2 class="text-center text-warning display-5 fw-bold mx-auto mt-5" id="about">What People Say About Us</h2>
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-2">
+                <img src="./images/image9.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-info">Feedback</h5>
+                    <p class="card-text text-light">Some quick example text to build.</p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="col col-lg-2">
+                <img src="./images/image9.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-info">Feedback</h5>
+                    <p class="card-text text-light">Some quick example text to build.</p>
+                </div>
+            </div>
+        </div>
+        <!--contact us start -->
+        <h2 class="text-center text-warning display-5 fw-bold mx-auto mt-5" id="contact">Contact Us</h2>
+        <section class="contact text-warning fw-bold" id="con">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-12" data-aos="fade-up-left" data-aos-offset="200">
+                        <form class="row g-3 mt-5">
+                            <div class="col-md-6">
+                                <label for="inputEmail4" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputPassword4" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="inputPassword4">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputAddress" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputCity" class="form-label">City</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="inputState" class="form-label">State</label>
+                                <select id="inputState" class="form-select">
+                                    <option selected>Choose...</option>
+                                    <option>Saudi Arabia</option>
+                                    <option>Pakistan</option>
+                                    <option>Afghanistan</option>
+                                    <option>Türkiye (Turkey)</option>
+                                    <option>Algeria</option>
+                                    <option>Zambia</option>
+                                    <option>Zimbabwe</option>
+                                    <option>Yemen</option>
+                                    <option>United Arab Emirates</option>
+                                    <option>United States of America (USA)</option>
+                                    <option> Netherlands</option>
+                                    <option>Thailand</option>
+                                    <option>Syria</option>
+                                    <option>Switzerland</option>
+                                    <option>Sweden</option>
+                                    <option>Sudan</option>
+                                    <option>Sri Lanka</option>
+                                    <option>Spain</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <label for="inputZip" class="form-label">Zip</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                        Check me out
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-4">
+                                <button type="submit" class="btn btn-warning fw-bold">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-12 m-auto text-end p-5 mt-4" data-aos="zoom-in-right"
+                        data-aos-offset="200">
+                        <img src="./images/battle.jpg" id="msbt" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact us end -->
+        <!-- footer start -->
+        <div class="container-fluid text-warning p-4 footer pt-5 mt-5 wow fadeIn" id="foot" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-warning fw-bold mb-4">Get In Touch</h3>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Aptech North Nazimabad,Karachi</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i></p>
+                        <div class="d-flex pt-2">
+                            <!-- <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-warning fw-bold mb-4">Quick Links</h3>
+                        <a class="btn btn-link text-light" href="#about">About Us</a>
+                        <a class="btn btn-link text-light" href="#contact">Contact Us</a>
+                        <a class="btn btn-link text-light" href="#action">Action Games</a>
+                        <a class="btn btn-link text-light" href="#categories">Categories</a>
+                        <a class="btn btn-link text-light" href="./responsive.html">Responsive Page</a>
+                        <a class="btn btn-link text-light" href="#">Terms &amp; Condition</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-warning fw-bold mb-4">Newsletter</h3>
+                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class=" text-center fw-bold mx-auto ">Designed By Muhammad Haziq &amp; 2023 ©</h3>
+            <hr class="w-25 bg-white mx-auto">
+        </div>
+        <!-- footer end -->
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+        <swiper-container>
+            <swiper-slide>Slide 1</swiper-slide>
+            <swiper-slide>Slide 2</swiper-slide>
+            <swiper-slide>Slide 3</swiper-slide>
+            <swiper-slide>Slide ...</swiper-slide>
+        </swiper-container>
+        <script src="./app.js"></script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
